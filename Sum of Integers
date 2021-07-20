@@ -1,0 +1,35 @@
+
+//Method 1
+
+public class Main
+{
+	public static void main(String[] args) {
+		int sum1=20;
+		int sum2=30;
+		int sum3;
+		sum3 = sum1+sum2;
+		
+		System.out.println("Sum is: "+sum3);
+	}
+}
+
+
+//Method 2
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		int num1,num2,Sum;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter first number");
+		num1 = sc.nextInt();
+		
+		System.out.println("Enter Second number");
+		num2 = sc.nextInt();
+		
+		Sum = num1+num2;
+		System.out.println("Sum is: "+Sum);
+	}
+}
