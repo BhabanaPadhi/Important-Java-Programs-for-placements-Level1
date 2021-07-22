@@ -1,0 +1,21 @@
+//Method 1
+public class Main
+{
+  public static void main (String[]args)
+  {
+    char ch[] = {'b','h','a','b','a','n','a'};
+    String str = new String(ch);
+    System.out.println(str);
+  }
+}
+
+//Method 2
+public class Main
+{
+  public static void main (String[]args)
+  {
+    char ch[] = {'b','h','a','b','a','n','a'};
+    String str1 = String.valueOf(ch);
+    System.out.println(str1);
+  }
+}
