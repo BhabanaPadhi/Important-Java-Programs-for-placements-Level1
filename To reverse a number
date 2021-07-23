@@ -1,0 +1,66 @@
+//Method 1
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int number = 0;
+	    int revnum = 0;
+	    System.out.println("Enter you number : ");
+	    Scanner sc = new Scanner(System.in);
+	    number = sc.nextInt();
+	    while(number!=0)
+	    {
+	        revnum = revnum * 10 + number%10;
+	        number = number / 10;
+	    }
+	    System.out.println("Reversed number is : "+revnum);
+	}
+}
+
+// Method 2
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int number = 0;
+	    int revnum = 0;
+	    System.out.println("Enter you number : ");
+	    Scanner sc = new Scanner(System.in);
+	    number = sc.nextInt();
+	    for( ; number!=0; )
+	    {
+	        revnum = revnum * 10 + number%10;
+	        number = number / 10;
+	    }
+	    System.out.println("Reversed number is : "+revnum);
+	}
+}
+
+//Method 3
+
+import java.util.Scanner;
+class Main
+{
+   public static void reverseMethod(int number) {
+       if (number < 10) {
+	   System.out.println(number);
+	   return;
+       }
+       else {
+           System.out.print(number % 10);
+           reverseMethod(number/10);
+       }
+   }
+   public static void main(String args[])
+   {
+	int num=0;
+	System.out.println("Enter your number ");
+	Scanner sc = new Scanner(System.in);
+	num = sc.nextInt();
+	System.out.print("Reversed number is:");
+	reverseMethod(num);
+	System.out.println();
+   }
+}
